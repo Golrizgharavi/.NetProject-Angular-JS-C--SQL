@@ -1,0 +1,44 @@
+﻿
+
+<div ng-controller="phoneController as phoneControllerVM">
+
+    <h1>{{phoneControllerVM.message}}</h1>
+
+    <form  name="FrmPhoneSearchFilter" id="FrmPhoneSearchFilter" ng-submit="phoneControllerVM.SearchPhoneByFilter()">
+        <label>Name:</label>    
+        <input type="text" name="productName" ng-model="phoneControllerVM.Name" id="productName" placeholder="Type part of name" />
+         <br />   
+        <br />
+        <label>Device Type:</label>
+        <ul>
+            <li><label>Phone </label><input id="phoneTypeChk" type="checkbox" value="Phone" name="DeviceTypeChP" ng-model="phoneControllerVM.PrTypeP" /></li>
+            <li><label>Tablet </label><input id="TabletTypeChk" type="checkbox" value="Tablet" name="DeviceTypeChT" ng-model="phoneControllerVM.PrTypeT" /></li>
+        </ul>
+        
+        <button type="submit" >Submit</button>
+</form>
+    
+
+    <br />
+    <br />
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Device</th>
+            <th>Publish Date</th>
+        </tr>
+        <tr ng-repeat="phone in phoneControllerVM.phones">
+            <td>{{phone.Id}}</td>           
+            <td>{{phone.Name}}</td>
+            <td>{{phone.Brand}}</td>
+            <td>{{phone.PrType}}</td>
+            <td>{{phone.PublishDate }}</td>
+        </tr>
+    </table>
+
+
+
+
+</div>

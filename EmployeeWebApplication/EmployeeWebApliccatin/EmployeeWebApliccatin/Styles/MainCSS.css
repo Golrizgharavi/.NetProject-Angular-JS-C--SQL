@@ -1,0 +1,74 @@
+﻿
+
+.TeamInfoHolder{margin-top:20px;}
+.TeamInfoHolder .post-item {
+    float: left;
+    margin-right: 0.5%;
+    margin-bottom: 0.5%;
+    width: 280px;
+    height: 289px;
+    position: relative;
+}
+
+
+.TeamInfoHolder .team-name-position {
+    background: url(/images/port-grid-gradient.png) repeat-x center bottom;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 15px;
+    color: #fff;
+    width: 100%;
+    line-height: 1.2;
+}
+
+.post-content {
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+
+}
+
+ .post-content:hover {
+        opacity: 0.7;
+    }
+    .post-Descripton {
+        position: absolute;
+        top: 20%;
+        left: 20px;
+        padding: 10px;
+        color: #fff;
+    }
+
+
+.team-name-position .team-name {
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+
+.team-name-position .team-position {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 0 !important;
+}
+
+.carousel-caption h3 {
+    color: #000 !important;
+}
+
+.carousel-caption p {
+    color: #000 !important;
+}
+
+.carousel-caption {
+    background-color: #ddd;
+    opacity: 0.7;
+    border-radius: 10px;
+}
+
